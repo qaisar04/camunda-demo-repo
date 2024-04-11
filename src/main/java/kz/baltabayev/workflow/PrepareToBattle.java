@@ -21,7 +21,6 @@ public class PrepareToBattle implements JavaDelegate {
         int warriors = (int) delegateExecution.getVariable("warriors");
         int enemyWarriors = (int) (Math.random() * 100);
 
-
         if (warriors < 1 || warriors > maxWarriors) {
             throw new BpmnError("warriorsError");
         }

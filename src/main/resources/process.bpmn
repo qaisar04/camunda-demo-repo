@@ -98,11 +98,11 @@
       <bpmn:incoming>Flow_1lsnzqw</bpmn:incoming>
       <bpmn:incoming>Flow_1covmvl</bpmn:incoming>
       <bpmn:outgoing>Flow_1104s3v</bpmn:outgoing>
-      <bpmn:serviceTask id="Activity_02e2fax" name="Fight the enemy!" camunda:delegateExpression="${fightTheEnemy}">
+      <bpmn:serviceTask id="Activity_02e2fax" name="Fight the enemy!" camunda:delegateExpression="${fightEnemy}">
         <bpmn:incoming>Flow_11kgwr3</bpmn:incoming>
         <bpmn:outgoing>Flow_18ql4lx</bpmn:outgoing>
         <bpmn:multiInstanceLoopCharacteristics camunda:collection="army" camunda:elementVariable="warrior">
-          <bpmn:completionCondition xsi:type="bpmn:tFormalExpression">${army.size &lt; 1 || enemyWarriors &lt; 1}}</bpmn:completionCondition>
+          <bpmn:completionCondition xsi:type="bpmn:tFormalExpression">${army.size() &lt; 1 || enemyWarriors &lt; 1}</bpmn:completionCondition>
         </bpmn:multiInstanceLoopCharacteristics>
       </bpmn:serviceTask>
       <bpmn:startEvent id="Event_1qqecqz">
