@@ -15,6 +15,8 @@ public class FightEnemy implements JavaDelegate {
         ArrayList<Boolean> army = (ArrayList<Boolean>) delegateExecution.getVariable("army");
         int enemyWarriors = (int) delegateExecution.getVariable("enemyWarriors");
 
+        Thread.sleep(1000);
+
         if (new Random().nextBoolean()) {
             enemyWarriors--;
             System.out.println("Enemy warrior killed! :)");

@@ -27,12 +27,11 @@ public class PrepareToBattle implements JavaDelegate {
 
         List<Boolean> army = new ArrayList<>(Collections.nCopies(warriors, true));
 
-        System.out.printf("Prepare to battle: eneymy army - %s VS our army - %s!"
+        System.out.printf("Prepare to battle: eneymy army - %s VS our army - %s!\n"
                 .formatted(enemyWarriors, warriors)
         );
 
         delegateExecution.setVariable("army", army);
         delegateExecution.setVariable("enemyWarriors", enemyWarriors);
-        delegateExecution.setVariable("isWin", true);
     }
 }
