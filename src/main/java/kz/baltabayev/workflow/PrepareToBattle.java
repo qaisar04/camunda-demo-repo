@@ -1,6 +1,5 @@
 package kz.baltabayev.workflow;
 
-import com.github.javafaker.Faker;
 import kz.baltabayev.workflow.domain.Warrior;
 import org.camunda.bpm.engine.delegate.BpmnError;
 import org.camunda.bpm.engine.delegate.DelegateExecution;

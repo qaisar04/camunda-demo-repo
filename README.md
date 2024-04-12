@@ -10,7 +10,7 @@
     - camunda-engine-plugin-spin (для маппинга Pogo <> JSON)
     - camunda-spin-dataformat-json-jackson OR camunda-spin-dataformat-all
 
-
+<img src="src/main/resources/process.png" alt="bpmn">
 
 
 
