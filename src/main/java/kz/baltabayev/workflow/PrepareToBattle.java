@@ -58,7 +58,6 @@ public class PrepareToBattle implements JavaDelegate {
 
     private Warrior createWarrior() {
         Warrior warrior = new Warrior();
-        Faker faker = new Faker();
         HttpConnector httpConnector = Connectors.getConnector(HttpConnector.ID);
         HttpRequest request = httpConnector.createRequest().get().url(url);
 
